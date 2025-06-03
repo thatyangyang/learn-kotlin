@@ -10,6 +10,7 @@ fun main() {
     //sampleStart
     val simpleArray = arrayOf(1, 2, 3)
     val anotherArray = arrayOf(1, 2, 3)
+    val threeArray = simpleArray
 
     // Compares contents of arrays
     println(simpleArray.contentEquals(anotherArray))
@@ -17,6 +18,9 @@ fun main() {
 
     println(simpleArray == anotherArray)
     // false
+
+    println(simpleArray == threeArray)
+    // true    没有 equals 则使用引用
 
     // Using infix notation, compares contents of arrays after an element
     // is changed
